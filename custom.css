@@ -41,3 +41,9 @@ footer {
     background-image: url("discount2.png");
     background-size: cover;
 }
+
+.carousel-caption {
+    display: table;
+    background-color: rgba(20, 20, 24, 0.7);
+    color:#ffffff;
+}

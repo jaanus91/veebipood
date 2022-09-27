@@ -63,6 +63,8 @@
                         <a class="dropdown-item" href="#">Koorijad ja maskid</a>
                     </div>
                 </li>
+                <li class="nav-item"><a class="nav-link" href="meist.html">Meist</a></li>
+
             </ul>
             <!-- search -->
             <form class="form-inline my-2 my-lg-0">
@@ -73,12 +75,7 @@
             </form>
         </div>
         <!-- cart -->
-        <!--
-            <svg class="lnr mt-auto mr-3 my-3 lnr-cart"><use xlink:href="#lnr-cart"></use></svg>
-            -->
-        <button class="btn btn-dark my-2 my-sm-0" type="submit"><svg class="lnr lnr-cart">
-                <use xlink:href="#lnr-cart"></use>
-            </svg></button>
+        <a href="cart.html"><button class="btn btn-dark my-2 my-sm-0" type="submit"><svg class="lnr lnr-cart"><use xlink:href="#lnr-cart"></use></svg></button></a>
     </nav>
     <!-- breadcrumb -->
     <section>
@@ -101,37 +98,37 @@
             <p class="lead">*Soodustus kehtib kõigile toodetele, mis on ostetud ajavahemikus 23.09 - 26.09</p>
         </div>
     </div>
-    <section>
-        <form class="form-inline mb-4 justify-content-end">
-
-            <div class="form-group">
-
-                <label for="sort" class="control-label col-lg-4">Sorteeri</label>
-
-                <select class="form-control col-lg-8" id="sort">
-
-                    <option>Populaarsemad</option>
-                    <option>Odavamad enne</option>
-                    <option>Kallimad enne</option>
-
-                </select>
-
-            </div>
-
-        </form>
-    </section>
     <!-- tooted --->
     <section>
         <div class="container">
+            <section>
+                <form class="form-inline mb-4 justify-content-end">
+
+                    <div class="form-group">
+
+                        <label for="sort" class="control-label col-lg-4">Sorteeri</label>
+
+                        <select class="form-control col-lg-8" id="sort">
+
+                            <option>Populaarsemad</option>
+                            <option>Odavamad enne</option>
+                            <option>Kallimad enne</option>
+
+                        </select>
+
+                    </div>
+
+                </form>
+            </section>
             <h2 class="h mb-3">TOP</h2>
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt=""
                                 class="card-img-top"></a>
                         <div class="card-body">
-                            <h5> <a href="#" class="text-dark">Toode 1</a></h5>
+                            <h5> <a href="toode.html" class="text-dark">Toode 1</a></h5>
                             <p class="text-muted card-text"> 15.99&#8364;</p>
-                            <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
+                            <a role="button" href="toode.html" class="btn btn-outline-dark">Vaata</a>
                         </div>
                     </div>
                 </div>
@@ -203,13 +200,27 @@
         <div class="container-fluid">
             <div class="row">
                 <!-- TODO! --->
-                <div class="col-md-6 mb-4">
-                    <p class="mb-0 text-muted">&copy; 2022 Company, Inc</p>
-                    <p class="mb-0 text-muted">&copy; 2022 Company, Inc</p>
-                    <p class="mb-0 text-muted">&copy; 2022 Company, Inc</p>
+                <div class="col-sm-6">
+                    <p class="mb-0 text-muted"><svg class="lnr lnr-home">
+                            <use xlink:href="#lnr-home"></use>
+                        </svg>
+                        Kuperjanovi 51
+                    </p>
+                    <p class="mb-0 text-muted">
+                        <svg class="lnr lnr-envelope">
+                            <use xlink:href="#lnr-envelope"></use>
+                        </svg>
+                        ilus@ilu.ee
+                    </p>
+                    <p class="mb-0 text-muted">
+                        <svg class="lnr lnr-phone-handset">
+                            <use xlink:href="#lnr-phone-handset"></use>
+                        </svg>
+                        +372 555 555555
+                    </p>
                 </div>
-                <div class="col-md-6 mb-4 justify-content-end">
-                    <ul class="nav col-md-4 list-unstyled d-flex">
+                <div class="col-sm-6 justify-content-end">
+                    <ul class="list-unstyled d-flex justify-content-end mt-3">
                         <li class="ms-3"><a class="text-muted" href="#instagram"><svg class="bi" width="44" height="44">
                                     <use xlink:href="#instagram" />
                                 </svg></a></li>
